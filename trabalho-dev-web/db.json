@@ -1,0 +1,11 @@
+{
+  "clientes": [
+    {
+      "id": "8763",
+      "name": "Teste clientes",
+      "email": "cliente@teste.com",
+      "phone": "(44) 99999-9999",
+      "cpf": "012.345.678-90"
+    }
+  ]
+}

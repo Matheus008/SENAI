@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>José é o cara</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+
+    <style>
+
+        /*https://www.w3schools.com/w3css/tryw3css_templates_dark_portfolio.htm#*/
+
+        * {
+            margin: 0px;
+            padding: 0px;
+            box-sizing: border-box;
+            font-family: "Montserrat", sans-serif;
+        }
+
+        .page {
+            width: 100vw;
+            height: 100vh;
+            border: 1px solid green;
+            display: flex;
+            overflow: hidden;
+        }
+
+        .menu {
+            width: 100px;
+            height: 100vh;
+            border: 1px solid orange;
+            background-color: orange;
+        }
+
+        .content {
+            width: calc(100vw - 100px);
+            height: 100vh;
+            border: 1px solid yellow;
+            background-color: yellow;
+            overflow-y: auto;
+            overflow-x: hidden;
+        }
+
+        .menu-item {
+            width: 100%;
+            height: 100px;
+            border: 1px solid red;
+            background-color: salmon;
+        }
+
+        .header {
+            width: 100%;
+            height: 150px;
+            background-color: #000;
+        }
+
+        .header h1,
+        .header h4 {
+            font-family: "Montserrat", sans-serif;
+            color: #fff;
+            font-weight: 400;
+            text-align: center;
+        }
+
+        .header h1 {
+            font-size: 64px;
+            margin: 10px;
+        }
+
+        .header h4 {
+            font-size: 15px;
+            margin: 0px;
+        }
+
+
+        .picture {
+            width: 100%;
+            background-color: #000;
+            display: flex;
+            justify-content: center;
+        }
+
+        div[class^="section"] {
+            width: 100%;
+            min-height: 100px;
+            margin: 5px;
+            background-color: #000;
+        }
+
+        div .section01 {
+            width: 100%;
+            min-height: 100px;
+            margin: 5px;
+            background-color: #000;
+        }
+
+        div[class^="section"]  hr{
+            width: 200px;
+            margin: 20px;
+            background-color: #eee;
+        }
+
+        div[class^="section"] h2 {
+            font-family: "Montserrat", sans-serif;
+            font-size: 30px;
+            color: #fff;
+            font-weight: 400;
+            margin: 10px 0px;
+        }
+
+        .section01 p {
+            margin: 10px;
+            color: #fff;
+            font-family: "Montserrat", sans-serif;
+            font-weight: 200;
+            font-size: 15px;
+            text-align: justify;
+            line-height: 1.5;
+        }
+
+        .line01-section04 {
+            width: 100%;
+            height: 50px;
+            background-color: #000;
+        }
+
+        .line02-section04 {
+            width: 100%;
+            padding: 5px;
+            background-color: #000;
+            display: flex;
+            gap: 5px;
+            justify-content: center;
+            margin: 16px;
+        }
+
+        .column01-section04,
+        .column02-section04 {
+            width: 300px;
+            background-color: black;
+            margin: 0px 16px;
+        }
+
+        .section04 .line02-section04 ul {
+            color: #000;
+            background-color: #fff;
+            text-align: center;
+            opacity: 0.60;
+            list-style-type: none;
+            display: block;
+            margin-block-start: 1em;
+            margin-block-end: 1em;
+            margin-inline-start: 0px;
+            margin-inline-end: 0px;
+            box-sizing: inherit;                    
+        }
+
+        .section04 .line02-section04 ul:hover {
+            opacity: 1; 
+        }
+
+        .section04 .line02-section04 ul li {
+            padding: 8px 16px;
+            border-bottom: 1px solid #ddd;
+            color: #000;
+            background-color: #fff;
+            padding-top: 32px;
+            padding-bottom: 32px;
+            display: list-item;
+            text-align: -webkit-match-parent;
+            width: 100%;
+        }
+
+        .section04 .line02-section04 ul .primeiro{
+            color: #fff;
+            background-color: #616161;
+        }
+
+        .section04 .line02-section04 ul .ultimo{
+            color: #fff;
+            background-color: #d6d0d0;
+        }
+
+        .section04 .line02-section04 ul li button{
+            border: none;
+            display: inline-block;
+            vertical-align: middle;
+            overflow: hidden;
+            text-decoration: none;
+            text-align: center;
+            cursor: pointer;
+            text-transform: none;
+            font: inherit;
+            margin: 0px;
+            letter-spacing: normal;
+            word-spacing: normal;
+            text-indent: 0px;
+            text-shadow: none;
+            padding-block: 1px;
+            padding-inline: 6px;
+            color: #000;
+            background-color: #fff;
+            width: 150px;
+            height: 25px;
+        }
+
+        .section04 .line02-section04 ul li button:hover{
+            color: #FFF;
+            background-color: #000;
+            
+        }
+        
+        .line01-section06 {
+            width: 100%;
+            height: 50px;
+            background-color: greenyellow;
+        }
+
+        .line02-section06 {
+            width: 100%;
+            background-color: orange;
+            display: flex;
+            gap: 5px;
+            justify-content: center;
+        }
+
+        .column01-section06,
+        .column02-section06 {
+            width: 300px;
+            height: 900px;
+            background-color: aquamarine;
+        }
+
+        .column01-section06 img,
+        .column02-section06 img {
+            width: 100%;
+            padding: 1px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="page">
+        <div class="menu">
+            <div class="menu-item"></div>
+            <div class="menu-item"></div>
+            <div class="menu-item"></div>
+            <div class="menu-item"></div>
+            <div class="menu-item"></div>
+        </div>
+        <div class="content">
+            <div class="header">
+                <h1>I'm John Doe.</h1>
+                <h4>Photographer and Web Designer.</h4>
+            </div>
+            <div class="picture">
+                <img src="https://www.w3schools.com/w3images/man_smoke.jpg" alt="">
+            </div>
+
+            <div class="section01">
+                <h2>My Name</h2>
+
+                <hr>
+
+                <p>Some text about me. Some text about me. I am lorem ipsum consectetur adipiscing elit, sed do eiusmod
+                    tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+                    exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
+                    reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint
+                    occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum
+                    consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+                    enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                    consequat.</p>
+            </div>
+            <div class="section02"></div>
+            <div class="section03"></div>
+            <div class="section04">
+                <div class="line01-section04">
+                    <h2>My price</h2>
+                    <hr>
+                </div>
+                <div class="line02-section04">
+                    
+                    <div class="column01-section04">
+                        <ul>
+                            <li class="primeiro">Basic</li>
+                            <li>Web Design</li>
+                            <li>Photography</li>
+                            <li>5GB Storage</li>
+                            <li>Mail Support</li>
+                            <li>
+                                <h2 style="color:#000">$10</h2>
+                                <span>per month</span>
+                            </li>
+                            <li class="ultimo">
+                                <button>Sign Up</button>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="column02-section04">
+                        <ul>
+                            <li class="primeiro">Basic</li>
+                            <li>Web Design</li>
+                            <li>Photography</li>
+                            <li>5GB Storage</li>
+                            <li>Mail Support</li>
+                            <li>
+                                <h2 style="color:#000">$10</h2>
+                                <span>per month</span>
+                            </li>
+                            <li class="ultimo">
+                                <button>Sign Up</button>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="section05"></div>
+            <div class="section06">
+                <div class="line01-section06"></div>
+                <div class="line02-section06">
+                    <div class="column01-section06">
+                        <img src="https://www.w3schools.com/w3images/wedding.jpg" alt="">
+                        <img src="https://www.w3schools.com/w3images/rocks.jpg" alt="">
+                        <img src="https://www.w3schools.com/w3images/sailboat.jpg" alt="">
+                    </div>
+                    <div class="column02-section06">
+                        <img src="https://www.w3schools.com/w3images/underwater.jpg" alt="">
+                        <img src="https://www.w3schools.com/w3images/chef.jpg" alt="">
+                        <img src="https://www.w3schools.com/w3images/wedding.jpg" alt="">
+                        <img src="https://www.w3schools.com/w3images/p6.jpg" alt="" style="height: 200px;">
+                    </div>
+                </div>
+            </div>
+            <div class="section07"></div>
+            <div class="section08"></div>
+            <div class="section09"></div>
+            <div class="section10"></div>
+        </div>
+    </div>
+</body>
+
+</html>

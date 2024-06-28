@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lista de Tarefas</title>
+    <style>
+        table {
+            border-collapse: collapse;
+            margin-top: 10px;
+        }
+        thead tr td {
+            background-color: rgb(190, 196, 196);
+        }
+        tr td {
+            border: solid 1px black;
+            padding: 0px;
+            width: 120px;
+        }
+        tr a {
+            text-decoration: none;
+            color: black;
+        }
+        tr a:hover {
+            color: red;
+        }
+    </style>
+</head>
+
+<body>
+    {% if message %}
+    <div>{{message}}</div>
+    {% endif %}
+    <h1>Lista de Tarefas</h1>
+    <a href="/tasks/novo">Novo</a>
+    <table>
+        <thead>
+            <tr>
+                <td>Código</td>
+                <td>Título</td>
+                <td>Completada</td>
+                <td>Ações</td>
+            </tr>
+        </thead>
+        <tbody>
+            {% for task in tasks %}
+            <tr>
+                <td>{{ task.id }}</td>
+                <td>{{ task.title }}</td>
+                <td>
+                    {% if task.completed == true %}
+                    Sim
+                    {% else %}
+                    Não
+                    {% endif %}
+                </td>
+                <td><a href="/tasks/{{task.id}}">Editar</a> / <a href="/tasks/{{task.id}}/remove">Excluir</a></td>
+            </tr>
+            {% else %}
+            <tr>
+                <td colspan="4">
+                    Não existem tarefas cadastrada
+                </td>
+            </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+
+</body>
+
+</html>

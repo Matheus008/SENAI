@@ -1,0 +1,19 @@
+{
+  "tarefas": [
+    {
+      "id": "10",
+      "title": "Fake task",
+      "description": "Tarefa de exemplo",
+      "concluded": false
+    },
+    {
+      "id": "e1ee",
+      "title": "Matheus",
+      "description": "123",
+      "concluded": false
+    }
+  ]
+}
+
+//npm install -g json-server  
+// npx json-server --watch db.json --port 3000

@@ -1,0 +1,140 @@
+
+header p {
+    font-size: 5em;
+    text-align: center;
+    color: blue;
+}
+
+main div form button,
+a {
+    margin-top: 10px;
+}
+
+main div button {
+    margin-top: 10px;
+}
+
+header {
+    background-color: black;
+}
+
+section {
+    display: flex;
+    flex-direction: row;
+    height: 5%;
+}
+
+.imagemPequena {
+    max-width: 100px;
+    max-height: 90px;
+    margin-left: 40px;
+    margin-top: 50px;
+}
+
+.imagemPrimeira {
+
+    margin-top: 50px;
+}
+
+.imagemGrande {
+    max-width: 500%;
+    max-height: 52%;
+    margin-left: 1px;
+    margin-top: 50px;
+}
+
+div p {
+    margin-top: 50px;
+}
+
+.duasImagens {
+    width: 10%;
+    height: 50%;
+    margin-left: 100px;
+}
+
+.umaImagemGrande {
+    width: 40%;
+    height: 0,5%;
+}
+
+.texto {
+    width: 20%;
+    height: 50%;
+}
+
+.rating {
+    font-size: 0;
+}
+
+.star {
+    width: 30px;
+    height: 30px;
+    display: inline-block;
+    background-color: transparent;
+    cursor: pointer;
+    margin-right: 5px;
+    position: relative;
+}
+
+.star::before {
+    content: "\2605";
+    font-size: 24px;
+    color: gold;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition: color 0.2s;
+}
+
+.star:hover::before {
+    color: #ccc;
+}
+
+div ul li {
+    margin-left: 100px;
+    max-width: 50%;
+    max-height: 50%;
+}
+
+.doisButton {
+    margin-top: -500px;
+    margin-left: 500px;
+}
+
+section h2 {
+    margin-left: -1250px;
+    margin-top: -300px;
+}
+
+.comentarios {
+    margin-left: -200px;
+    margin-top: -250px;
+    max-width: 100%;
+    
+}
+
+table {
+    width: 100%;
+    text-align: center;
+}
+
+th {
+    background-color: #383838;
+    color: #fff;
+    padding: 0.5em;
+}
+
+th, td {
+    border-bottom: 1px solid #4d4d4d;
+    padding: 0.5em;
+}
+
+tr:nth-child(even) {
+    background-color: #DCDCDC;
+}
+
+tr:hover {
+    background-color: #535151;
+    color: #fff;
+}
