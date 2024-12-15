@@ -13,7 +13,7 @@ const routes = createBrowserRouter([
     element:
       <div>
         <h1>Home</h1>
-        <a href="/clientes">Lista de Clientes</a>
+        <a href="/clientes" className='btn'>Lista de Clientes</a>
       </div>
   }, {
     path: "/clientes",
